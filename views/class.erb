@@ -1,0 +1,11 @@
+<p>Class id: <%= @class.id %></p>
+<p>Class Name: <%= @class.name %></p>
+<p>Class instructor: <%= @class.instructor %></p>
+
+<p>Students:</p>
+<ul>
+    <% cs = @class.students %>
+    <% cs.each do |s| %>
+    <li> <%= s.name %></li>
+    <%end%>
+</ul>
